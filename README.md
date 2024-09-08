@@ -1,1 +1,0 @@
-# Termux_Battery_Status

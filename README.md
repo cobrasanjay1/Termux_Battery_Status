@@ -8,6 +8,7 @@ This Python script, `bat.py`, monitors the battery status on a Termux environmen
 ## Features
 
 - Monitors battery status in real-time using the Termux API.
+- Sets the media volume to 15 (max)
 - Announces the battery percentage when it reaches 80% or higher using Termux TTS.
 - Exits when the charger is unplugged.
 
@@ -41,7 +42,7 @@ The script will continuously monitor the battery status and speak the percentage
 ## How It Works
 
 - **Battery Status**: The script retrieves battery information using `termux-battery-status`, which provides data in JSON format.
-- **Voice Feedback**: When the battery percentage is 80% or higher, the script uses `termux-tts-speak` to announce the current battery percentage.
+- **Voice Feedback**: Sets the volume to 100%, when the battery percentage is 80% or higher, the script uses `termux-tts-speak` to announce the current battery percentage.
 - **Charger Monitoring**: The script stops execution when it detects that the charger is unplugged.
 
 ## Example Output
